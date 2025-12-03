@@ -1,141 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Julia Koutsoukos</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="page-about">
+<body>
   <header class="site-header">
-    <div class="nav container">
-      <a href="index.html" class="brand">
-        <span class="brand-mark"></span>
-        <span class="brand-text">Julia Koutsoukos</span>
-      </a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span>
-      </button>
-
-      <nav class="nav-links" aria-label="Primary">
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">JK</a>
+      <nav class="nav">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link is-active">About</a>
+        <a href="about.html" class="nav-link active">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="page-main">
-    <section class="section container about-layout">
-      <div class="about-visual">
-        <div class="avatar-orbit">
-          <div class="avatar-circle">
-            <!-- You can swap this for an actual image later -->
-            <span class="avatar-initials">JK</span>
-          </div>
-          <div class="status-pill">Designing the future</div>
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>About me</h1>
+        <p class="page-subtitle">
+          A bit more context about who I am, what I’m studying, and how design fits in.
+        </p>
+      </div>
+    </section>
+
+    <section class="two-column">
+      <div class="container two-column-grid">
+        <div>
+          <h2>Background</h2>
+          <p>
+            I’m an Information Science student with a focus on human-centered design.
+            I’m interested in how interfaces can support real people with real needs,
+            especially in wellness and education spaces.
+          </p>
         </div>
 
-        <ul class="about-stats">
-          <li>
-            <span class="stat-label">Focus</span>
-            <span class="stat-value">Human-centered design</span>
-          </li>
-          <li>
-            <span class="stat-label">Tools</span>
-            <span class="stat-value">Figma, HTML/CSS, systems</span>
-          </li>
-          <li>
-            <span class="stat-label">Currently</span>
-            <span class="stat-value">Exploring new interfaces</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="about-copy">
-        <p class="eyebrow">About</p>
-        <h1>Who I am as a designer</h1>
-
-        <p>
-          My work usually starts with listening—understanding
-          what people are trying to do, what’s frustrating them, and where a product
-          can quietly support them.
-        </p>
-
-        <p>
-          I’m especially drawn to projects around wellness, education, and
-          everyday tools. I like exploring how small design decisions can change
-          how someone feels using a product.
-        </p>
-
-        <p>
-          On the technical side, I’m comfortable moving between
-          <strong>research, UX flows, and front-end implementation.</strong>
-          This site is part of that growth: a cleaner, more focused version of
-          my earlier portfolio, built to highlight clarity and craft.
-        </p>
-
-        <div class="about-tags">
-          <span class="pill">User research</span>
-          <span class="pill">Interaction design</span>
-          <span class="pill">Prototyping</span>
-          <span class="pill">Accessibility-minded</span>
+        <div>
+          <h2>What I’m learning</h2>
+          <ul class="simple-list">
+            <li>Structuring content clearly with HTML</li>
+            <li>Styling layouts with modern CSS</li>
+            <li>Planning user flows before jumping into visuals</li>
+            <li>Expanding on user research skills</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section container">
-      <header class="section-header">
-        <h2>How I like to work</h2>
-      </header>
-
-      <div class="timeline">
-        <article class="timeline-item">
-          <h3>Explore</h3>
-          <p>
-            Start with questions, not assumptions. I gather context through
-            conversations, existing data, and quick audits.
-          </p>
-        </article>
-        <article class="timeline-item">
-          <h3>Shape</h3>
-          <p>
-            Turn insights into flows, sketches, and prototypes. I share early
-            and invite feedback often.
-          </p>
-        </article>
-        <article class="timeline-item">
-          <h3>Refine</h3>
-          <p>
-            Polish the details: hierarchy, states, microcopy, and handoff notes
-            that make implementation smoother.
-          </p>
-        </article>
+    <section class="section-muted">
+      <div class="container">
+        <h2>Looking ahead</h2>
+        <p>
+          As my skills grow, I’m excited to create more detailed case studies, experiment
+          with interaction patterns, and build projects that connect digital tools with
+          real-world experiences.
+        </p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Your Name.</p>
-      <p class="footer-meta">Version 2.0 · White + blue, futuristic and focused.</p>
+    <div class="container footer-content">
+      <p>© 2025 Julia Koutsoukos</p>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const toggle = document.querySelector('.nav-toggle');
-    const links = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('is-open');
-      toggle.classList.toggle('is-open');
-    });
-  </script>
 </body>
 </html>

@@ -1,152 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julia Koutsoukos — Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="page-home">
+<body>
   <header class="site-header">
-    <div class="nav container">
-      <a href="index.html" class="brand">
-        <span class="brand-mark"></span>
-        <span class="brand-text">Your Name</span>
-      </a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span>
-      </button>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html" class="nav-link is-active">Home</a>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">JK</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="page-main">
-    <!-- Hero -->
-    <section class="hero container">
-      <div class="hero-text">
-        <p class="eyebrow">Portfolio 2.0 • 2025</p>
-        <h1>
-          Designing calm, <span class="accent-text">futuristic</span><br />
-          experiences for real people.
-        </h1>
-        <p class="hero-sub">
-          I’m a UX-focused creator who blends clean interfaces, thoughtful flows,
-          and just enough motion to keep things feeling alive.
-        </p>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Hi, I’m Julia.</h1>
+          <p class="lead">
+            I’m an Information Science student focused on human-centered design.
+            I enjoy turning ideas into interfaces that feel simple and supportive.
+          </p>
 
-        <div class="hero-actions">
-          <a href="contact.html" class="btn primary">Let’s connect</a>
-          <a href="about.html" class="btn ghost">More about me</a>
+          <div class="hero-actions">
+            <a href="about.html" class="btn primary">Learn more about me</a>
+            <a href="contact.html" class="btn ghost">Say hello</a>
+          </div>
+
+          <div class="hero-note">
+            <p>
+              This is an earlier, more minimal version of my portfolio, created to
+              show how my design and coding skills have grown over time.
+            </p>
+          </div>
         </div>
 
-        <dl class="hero-meta">
-          <div>
-            <dt>Focus</dt>
-            <dd>UX / Product Design</dd>
-          </div>
-          <div>
-            <dt>Strengths</dt>
-            <dd>Research, prototyping, systems</dd>
-          </div>
-          <div>
-            <dt>Based in</dt>
-            <dd>Your City · EST</dd>
-          </div>
-        </dl>
-      </div>
-
-      <div class="hero-orbit">
-        <div class="orbit-ring orbit-ring-1"></div>
-        <div class="orbit-ring orbit-ring-2"></div>
-        <div class="orbit-core">
-          <div class="orbit-label">
-            <span class="pill">Available 2026</span>
-            <span class="pill pill-outline">Internships & roles</span>
+        <div class="hero-card">
+          <!-- optional image; you can delete this whole figure if you want -->
+          <!-- <figure>
+            <img src="img/headshot.jpg" alt="Portrait of Julia">
+          </figure> -->
+          <div class="hero-card-inner">
+            <h2>What I care about</h2>
+            <ul>
+              <li>Clear, friendly interfaces</li>
+              <li>Designing for wellness</li>
+              <li>Connecting digital and physical experiences</li>
+            </ul>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- Highlights -->
-    <section class="section container">
-      <header class="section-header">
-        <h2>What I’m good at</h2>
-        <p>
-          A quick snapshot of how I think and work. No clutter, just the things
-          I bring to a team.
+    <section class="highlight">
+      <div class="container">
+        <h2>Recent focuses</h2>
+        <p class="section-intro">
+          A quick snapshot of areas I’ve been exploring in class projects and personal work.
+          (See my advanced site for deeper case studies.)
         </p>
-      </header>
 
-      <div class="grid-3">
-        <article class="card">
-          <h3>Research & insight</h3>
-          <p>
-            From interviews to synthesis, I translate messy, real-world stories
-            into clear product decisions and design directions.
-          </p>
-        </article>
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <h3>UX & Interaction</h3>
+            <p>
+              Sketching, building low-fidelity prototypes,
+              and thinking about how users actually move through an interface.
+            </p>
+          </div>
 
-        <article class="card">
-          <h3>Interaction & prototypes</h3>
-          <p>
-            I move quickly from low-fi ideas to clickable flows, testing
-            navigation, feedback, and micro-interactions with real people.
-          </p>
-        </article>
+          <div class="highlight-card">
+            <h3>Web Foundations</h3>
+            <p>
+              Writing clean HTML and CSS layouts that are responsive and readable,
+              without relying on heavy frameworks.
+            </p>
+          </div>
 
-        <article class="card">
-          <h3>Structure & systems</h3>
-          <p>
-            I care about naming, hierarchy, and reusable patterns, so products
-            feel consistent—even as they grow.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Statement -->
-    <section class="section container">
-      <div class="statement">
-        <p>
-          Right now I’m focused on designing experiences around
-          <span class="accent-text">wellness, learning, and everyday tools</span>
-          that genuinely help people feel more in control of their day.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
-      <p class="footer-meta">Built with HTML & CSS • Futuristic white + blue refresh.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Set current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const links = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('is-open');
-      toggle.classList.toggle('is-open');
-    });
-  </script>
-</body>
-</html>
+          <div class="hig
